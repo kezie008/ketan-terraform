@@ -21,3 +21,8 @@ jobs:
     - name: verify terraform installation 
       run: terraform version 
    
+    # access data 
+    - name: checking data
+      run: | 
+        echo "Hello ${{ secrets.AWS_ACCESS_KEY }}"
+        ls -al
