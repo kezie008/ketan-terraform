@@ -28,6 +28,7 @@ jobs:
         ls -al
 
     - name: running terraform code 
+      working-directory: ./ec2
       run: | 
         ls -al
         cd ../ec2
